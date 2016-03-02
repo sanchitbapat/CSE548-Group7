@@ -1,0 +1,15 @@
+hacl(_h522,_h523,_h524,_h525).
+
+hasAccount('192.168.220.140_victim','192.168.220.140',user).
+
+inCompetent('192.168.220.140_victim').
+
+attackGoal(execCode('192.168.220.140',_h353)).
+
+attackerLocated(internet).
+
+inCompetent('192.168.220.140_victim').
+hasAccount('192.168.220.140_victim', '192.168.220.140', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.220.140', _)).
+hacl(_,_,_,_).

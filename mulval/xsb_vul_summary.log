@@ -1,0 +1,88 @@
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 3.6. (Gazpatcho) of April 28, 2015
+[x86_64-unknown-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2016-02-27]
+
+| ?- [libmulval loaded, cpu time used: 0.0010 seconds]
+
+yes
+| ?- [auxiliary loaded]
+
+yes
+| ?- [vul_summary loaded]
+
+yes
+| ?- [/home/sanchit/mulval/nessus.P dynamically loaded, cpu time used: 0.0040 seconds]
+
+yes
+| ?- 
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vulExists / 3 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... setof:bfindall/4  From /home/sanchit/XSB/syslib/setof.xwam
+... setof:bagof1/3  From /home/sanchit/XSB/syslib/setof.xwam
+... setof:setof/3  From /home/sanchit/XSB/syslib/setof.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... setof:findall/3  From /home/sanchit/XSB/syslib/setof.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : networkServiceInfo / 5 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- 
+Host = _h183
+Host1 = _h201
+Protocol = _h219
+Port = _h237
+L = [hacl(_h522,_h523,_h524,_h525)]
+yes
+| ?- 
+A = _h183
+B = _h201
+C = _h219
+L = [hasAccount(192.168.220.140_victim,192.168.220.140,user)]
+yes
+| ?- 
+A = _h183
+L = [inCompetent(192.168.220.140_victim)]
+yes
+| ?- 
+A = _h183
+L = [attackGoal(execCode(192.168.220.140,_h353))]
+yes
+| ?- 
+A = _h183
+L = [attackerLocated(internet)]
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.03 secs, elapsetime 0.04 secs)

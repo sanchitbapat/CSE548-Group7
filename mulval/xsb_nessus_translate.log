@@ -1,0 +1,91 @@
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 3.6. (Gazpatcho) of April 28, 2015
+[x86_64-unknown-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2016-02-27]
+
+| ?- [Compiling ./results]
+[results compiled, cpu time used: 0.0030 seconds]
+[results loaded]
+
+yes
+| ?- [libmulval loaded]
+
+yes
+| ?- [nessus_translator loaded]
+
+yes
+| ?- 
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... vuln_exists/7  From 0
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
+... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
+... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
+... vulExists/3  From /home/sanchit/mulval/src/adapter/nessus_translator.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
+... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
+... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.01 secs, elapsetime 0.03 secs)

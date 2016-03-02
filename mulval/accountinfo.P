@@ -1,0 +1,4 @@
+inCompetent('192.168.220.140_victim').
+hasAccount('192.168.220.140_victim', '192.168.220.140', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.220.140', _)).
