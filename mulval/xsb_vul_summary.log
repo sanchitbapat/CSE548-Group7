@@ -6,57 +6,29 @@ XSB Version 3.6. (Gazpatcho) of April 28, 2015
 [x86_64-unknown-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
 [Build date: 2016-02-27]
 
-| ?- [libmulval loaded, cpu time used: 0.0010 seconds]
+| ?- [libmulval loaded]
 
 yes
-| ?- [auxiliary loaded]
+| ?- [auxiliary loaded, cpu time used: 0.0010 seconds]
 
 yes
 | ?- [vul_summary loaded]
 
 yes
-| ?- [/home/sanchit/mulval/nessus.P dynamically loaded, cpu time used: 0.0040 seconds]
+| ?- [/home/sanchit/mulval/nessus.P dynamically loaded, cpu time used: 0.0110 seconds]
 
 yes
 | ?- 
 yes
-| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : vulExists / 3 exists)] []
-Forward Continuation...
-... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
-... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
-... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
-... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
-... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... setof:bfindall/4  From /home/sanchit/XSB/syslib/setof.xwam
-... setof:bagof1/3  From /home/sanchit/XSB/syslib/setof.xwam
-... setof:setof/3  From /home/sanchit/XSB/syslib/setof.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... setof:findall/3  From /home/sanchit/XSB/syslib/setof.xwam
-... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
-... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
-... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
-... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
-| ?- ++Error[XSB/Runtime/P]: [Existence (No procedure usermod : networkServiceInfo / 5 exists)] []
-Forward Continuation...
-... machine:xsb_backtrace/1  From /home/sanchit/XSB/syslib/machine.xwam
-... loader:load_pred1/1  From /home/sanchit/XSB/syslib/loader.xwam
-... loader:load_pred0/1  From /home/sanchit/XSB/syslib/loader.xwam
-... loader:load_pred/1  From /home/sanchit/XSB/syslib/loader.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:call_c/1  From /home/sanchit/XSB/syslib/standard.xwam
-... x_interp:_$call/1  From /home/sanchit/XSB/syslib/x_interp.xwam
-... x_interp:call_query/1  From /home/sanchit/XSB/syslib/x_interp.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
-... x_interp:interpreter/0  From /home/sanchit/XSB/syslib/x_interp.xwam
-... loader:ll_code_call/3  From /home/sanchit/XSB/syslib/loader.xwam
-... standard:call/1  From /home/sanchit/XSB/syslib/standard.xwam
-... standard:catch/3  From /home/sanchit/XSB/syslib/standard.xwam
+| ?- 
+yes
+| ?- 
+Host = _h183
+Program = _h201
+Protocol = _h219
+Port = _h237
+L = [networkServiceInfo(192.168.1.1,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.1,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.1,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.1,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.2,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.2,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.2,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.2,windows_2000,tcp,0,someUser),networkServiceInfo(192.168.1.3,openssh,tcp,22,someUser),networkServiceInfo(192.168.1.3,openssh,tcp,22,someUser),networkServiceInfo(192.168.1.5,md5,tcp,8834,someUser),networkServiceInfo(192.168.1.7,windows_2003_server,udp,5355,someUser),networkServiceInfo(192.168.1.7,windows_2003_server,udp,5355,someUser),networkServiceInfo(192.168.1.6,http_server,tcp,80,someUser),networkServiceInfo(192.168.1.6,openssh,tcp,22,someUser),networkServiceInfo(192.168.1.6,openssh,tcp,22,someUser),networkServiceInfo(192.168.1.6,openssl,tcp,22,someUser),networkServiceInfo(192.168.1.6,http_server,tcp,80,someUser),networkServiceInfo(192.168.1.6,internet_information_services,tcp,80,someUser),networkServiceInfo(192.168.1.6,internet_information_services,tcp,80,someUser),networkServiceInfo(192.168.1.6,weblogic_server,tcp,80,someUser),networkServiceInfo(192.168.1.6,weblogic_server,tcp,80,someUser),networkServiceInfo(192.168.1.6,java_system_application_server,tcp,80,someUser),networkServiceInfo(192.168.1.6,ultrix,udp,2049,someUser),networkServiceInfo(192.168.1.6,ultrix,udp,2049,someUser),networkServiceInfo(192.168.1.6,solaris,udp,2049,someUser)]
+yes
 | ?- 
 Host = _h183
 Host1 = _h201
@@ -68,21 +40,21 @@ yes
 A = _h183
 B = _h201
 C = _h219
-L = [hasAccount(192.168.220.140_victim,192.168.220.140,user)]
+L = [hasAccount(192.168.1.1_victim,192.168.1.1,user),hasAccount(192.168.1.2_victim,192.168.1.2,user),hasAccount(192.168.1.3_victim,192.168.1.3,user),hasAccount(192.168.1.4_victim,192.168.1.4,user),hasAccount(192.168.1.5_victim,192.168.1.5,user),hasAccount(192.168.1.7_victim,192.168.1.7,user),hasAccount(192.168.1.6_victim,192.168.1.6,user)]
 yes
 | ?- 
 A = _h183
-L = [inCompetent(192.168.220.140_victim)]
+L = [inCompetent(192.168.1.1_victim),inCompetent(192.168.1.2_victim),inCompetent(192.168.1.3_victim),inCompetent(192.168.1.4_victim),inCompetent(192.168.1.5_victim),inCompetent(192.168.1.7_victim),inCompetent(192.168.1.6_victim)]
 yes
 | ?- 
 A = _h183
-L = [attackGoal(execCode(192.168.220.140,_h353))]
+L = [attackGoal(execCode(192.168.1.1,_h353)),attackGoal(execCode(192.168.1.2,_h360)),attackGoal(execCode(192.168.1.3,_h367)),attackGoal(execCode(192.168.1.4,_h374)),attackGoal(execCode(192.168.1.5,_h381)),attackGoal(execCode(192.168.1.7,_h388)),attackGoal(execCode(192.168.1.6,_h395))]
 yes
 | ?- 
 A = _h183
-L = [attackerLocated(internet)]
+L = [attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet)]
 yes
 | ?- 
 yes
 | ?- 
-End XSB (cputime 0.03 secs, elapsetime 0.04 secs)
+End XSB (cputime 0.04 secs, elapsetime 0.05 secs)

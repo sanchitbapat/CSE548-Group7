@@ -29,3 +29,559 @@ meta(cvss,2).
 meta(attackGoal,1).
 meta(advances,2).
 
+attack(execCode('192.168.1.1',someUser)).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'80'),[hacl(internet,'192.168.1.6',tcp,'80'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.6','192.168.1.6',tcp,'22'),advances('192.168.1.6','192.168.1.6'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',tcp,'22'),[hacl(internet,'192.168.1.6',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.6','192.168.1.6',udp,'2049'),advances('192.168.1.6','192.168.1.6'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.6',udp,'2049'),[hacl(internet,'192.168.1.6',udp,'2049'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.6','192.168.1.7',udp,'5355'),advances('192.168.1.6','192.168.1.7'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.7',udp,'5355'),[hacl(internet,'192.168.1.7',udp,'5355'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.6','192.168.1.5',tcp,'8834'),advances('192.168.1.6','192.168.1.5'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.7','192.168.1.5',tcp,'8834'),advances('192.168.1.7','192.168.1.5'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.5',tcp,'8834'),[hacl(internet,'192.168.1.5',tcp,'8834'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.6','192.168.1.3',tcp,'22'),advances('192.168.1.6','192.168.1.3'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.7','192.168.1.3',tcp,'22'),advances('192.168.1.7','192.168.1.3'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.3',tcp,'22'),[hacl(internet,'192.168.1.3',tcp,'22'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.6','192.168.1.2',tcp,'0'),advances('192.168.1.6','192.168.1.2'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.7','192.168.1.2',tcp,'0'),advances('192.168.1.7','192.168.1.2'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.3','192.168.1.2',tcp,'0'),advances('192.168.1.3','192.168.1.2'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.2',tcp,'0'),[hacl(internet,'192.168.1.2',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.2','192.168.1.2',tcp,'0'),advances('192.168.1.2','192.168.1.2'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.3','192.168.1.3',tcp,'22'),advances('192.168.1.3','192.168.1.3'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.2','192.168.1.3',tcp,'22'),advances('192.168.1.2','192.168.1.3'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.3','192.168.1.5',tcp,'8834'),advances('192.168.1.3','192.168.1.5'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.2','192.168.1.5',tcp,'8834'),advances('192.168.1.2','192.168.1.5'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.7','192.168.1.7',udp,'5355'),advances('192.168.1.7','192.168.1.7'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.3','192.168.1.7',udp,'5355'),advances('192.168.1.3','192.168.1.7'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.2','192.168.1.7',udp,'5355'),advances('192.168.1.2','192.168.1.7'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.7','192.168.1.6',udp,'2049'),advances('192.168.1.7','192.168.1.6'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.3','192.168.1.6',udp,'2049'),advances('192.168.1.3','192.168.1.6'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.2','192.168.1.6',udp,'2049'),advances('192.168.1.2','192.168.1.6'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.7','192.168.1.6',tcp,'22'),advances('192.168.1.7','192.168.1.6'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.3','192.168.1.6',tcp,'22'),advances('192.168.1.3','192.168.1.6'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.2','192.168.1.6',tcp,'22'),advances('192.168.1.2','192.168.1.6'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.6','192.168.1.6',tcp,'80'),advances('192.168.1.6','192.168.1.6'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.7','192.168.1.6',tcp,'80'),advances('192.168.1.7','192.168.1.6'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.3','192.168.1.6',tcp,'80'),advances('192.168.1.3','192.168.1.6'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.2','192.168.1.6',tcp,'80'),advances('192.168.1.2','192.168.1.6'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(6,rule_desc('direct network access',1.0),netAccess('192.168.1.1',tcp,'0'),[hacl(internet,'192.168.1.1',tcp,'0'),attackerLocated(internet)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.6','192.168.1.1',tcp,'0'),advances('192.168.1.6','192.168.1.1'),execCode('192.168.1.6',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.7','192.168.1.1',tcp,'0'),advances('192.168.1.7','192.168.1.1'),execCode('192.168.1.7',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.3','192.168.1.1',tcp,'0'),advances('192.168.1.3','192.168.1.1'),execCode('192.168.1.3',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.2','192.168.1.1',tcp,'0'),advances('192.168.1.2','192.168.1.1'),execCode('192.168.1.2',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.1','192.168.1.1',tcp,'0'),advances('192.168.1.1','192.168.1.1'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.1',tcp,'0'),[hacl('192.168.1.5','192.168.1.1',tcp,'0'),advances('192.168.1.5','192.168.1.1'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.1','192.168.1.2',tcp,'0'),advances('192.168.1.1','192.168.1.2'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.2',tcp,'0'),[hacl('192.168.1.5','192.168.1.2',tcp,'0'),advances('192.168.1.5','192.168.1.2'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.1','192.168.1.3',tcp,'22'),advances('192.168.1.1','192.168.1.3'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.3',tcp,'22'),[hacl('192.168.1.5','192.168.1.3',tcp,'22'),advances('192.168.1.5','192.168.1.3'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.1','192.168.1.5',tcp,'8834'),advances('192.168.1.1','192.168.1.5'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.5',tcp,'8834'),[hacl('192.168.1.5','192.168.1.5',tcp,'8834'),advances('192.168.1.5','192.168.1.5'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.1','192.168.1.7',udp,'5355'),advances('192.168.1.1','192.168.1.7'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.7',udp,'5355'),[hacl('192.168.1.5','192.168.1.7',udp,'5355'),advances('192.168.1.5','192.168.1.7'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.1','192.168.1.6',udp,'2049'),advances('192.168.1.1','192.168.1.6'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',udp,'2049'),[hacl('192.168.1.5','192.168.1.6',udp,'2049'),advances('192.168.1.5','192.168.1.6'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.1','192.168.1.6',tcp,'22'),advances('192.168.1.1','192.168.1.6'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'22'),[hacl('192.168.1.5','192.168.1.6',tcp,'22'),advances('192.168.1.5','192.168.1.6'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.1','192.168.1.6',tcp,'80'),advances('192.168.1.1','192.168.1.6'),execCode('192.168.1.1',someUser)])).
+
+possible_duplicate_trace_step(because(5,rule_desc('multi-hop access',0.5),netAccess('192.168.1.6',tcp,'80'),[hacl('192.168.1.5','192.168.1.6',tcp,'80'),advances('192.168.1.5','192.168.1.6'),execCode('192.168.1.5',someUser)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.1',someUser),[netAccess('192.168.1.1',tcp,'0'),networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser),vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+attack(execCode('192.168.1.2',someUser)).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.2',someUser),[netAccess('192.168.1.2',tcp,'0'),networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser),vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)])).
+
+attack(execCode('192.168.1.3',someUser)).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.3',someUser),[netAccess('192.168.1.3',tcp,'22'),networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser),vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+attack(execCode('192.168.1.5',someUser)).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.5',someUser),[netAccess('192.168.1.5',tcp,'8834'),networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser),vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)])).
+
+attack(execCode('192.168.1.7',someUser)).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.7',someUser),[netAccess('192.168.1.7',udp,'5355'),networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser),vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)])).
+
+attack(execCode('192.168.1.6',someUser)).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'80'),networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser),vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',tcp,'22'),networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser),vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+
+possible_duplicate_trace_step(because(2,rule_desc('remote exploit of a server program',1.0),execCode('192.168.1.6',someUser),[netAccess('192.168.1.6',udp,'2049'),networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser),vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)])).
+

@@ -121,8 +121,6 @@ String path = f.getPath();
 
 	password=breader.readLine();
 
-	System.out.println("\n\n\nConnection info\n"+url+" "+userName+" "+password+"\n\n\n");
-
 	Connection con = DriverManager.getConnection(url, userName, password);
 
 	return con;	
@@ -169,12 +167,11 @@ String path = f.getPath();
 
 			
 
-			for(int ct=2002;ct<=2002;ct++){
+			for(int ct=2002;ct<=year;ct++){
 
 			    //String fname="/transient/mulval/oval/nvd/nvdcve-"+Integer.toString(ct)+".xml";
-				String fname="nvd_xml_files1/nvdcve-"+Integer.toString(ct)+".xml";
+				String fname="nvd_old/nvdcve-"+Integer.toString(ct)+".xml";
 
-			System.out.println("\n\n\n\n\nfile "+fname+"\n\n\n\n\n");
 			
 
 			Document document = saxReader.read(fname);
@@ -193,7 +190,7 @@ String path = f.getPath();
 
 
 
-				String cveid = id.attributeValue("id");
+				String cveid = id.attributeValue("name");
 				
 				String cvss = "";
 				
@@ -260,21 +257,21 @@ String path = f.getPath();
 
 				}
 
-				if (subele.contains("vulnerable-software-list")) {
+				if (subele.contains("vuln_soft")) {
 
-					Element vs = (Element) id.element("product");
+					Element vs = (Element) id.element("vuln_soft");
 
-					Iterator itr = vs.elementIterator("product");
+					Iterator itr = vs.elementIterator("prod");
 
 					while (itr.hasNext()) { // record all of the softwares
 
 						Element n = (Element) itr.next();
-						System.out.println(n);
+
 
 
 						//sftw = sftw + n.attributeValue("name") + ",";
 
-						sftw =n.attributeValue("product");
+						sftw =n.attributeValue("name");
 
 					if(sftw.contains("'")){
 
@@ -419,7 +416,7 @@ String path = f.getPath();
 
 				}
 
-				System.out.println("\n\n\nvalues\n"+cveid + lose_types + rge + sftw + sev + access+"\n\n\n");
+				//System.out.println(cveid + lose_types + rge + sftw + sev + access);
 
 				String insert = "insert nvd values('" + cveid + "','"
 
@@ -428,7 +425,6 @@ String path = f.getPath();
 						+ "','" + access+"')";
 
 				sql.execute(insert);
-				//con.commit();
 
 
 
@@ -453,6 +449,7 @@ String path = f.getPath();
 		} catch (DocumentException e) {
 
 
+
 			e.printStackTrace();
 
 		} catch (IOException e) {
@@ -462,10 +459,6 @@ String path = f.getPath();
 			e.printStackTrace();
 
 		}
-//		finally{
-//			System.err.println("\n\n\n\nfile is \n"+fname+"\n\n\n\n\n\n\n\n");
-//			System.out.println("\n\n\n\nBC is \n"+fname+"\n\n\n\n\n\n\n\n");
-//		}
 
 
 

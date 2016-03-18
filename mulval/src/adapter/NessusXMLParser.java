@@ -32,7 +32,6 @@ public class NessusXMLParser {
 
 	public static void main(String[] args) {
 
-//		System.out.println("\n\n\n\nfile is \n"+arg[0]+"\n\n\n\n\n\n\n\n");
 		parseNessus(args[0]);
 		
 	}
@@ -124,7 +123,6 @@ public class NessusXMLParser {
 		} 
 		catch (DocumentException e) {
 
-//			System.err.println("\n\n\n\nhere is \n"+nessusReport+"\n\n\n\n\n\n\n\n");
 			e.printStackTrace();
 
 		}

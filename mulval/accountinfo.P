@@ -1,4 +1,28 @@
-inCompetent('192.168.220.140_victim').
-hasAccount('192.168.220.140_victim', '192.168.220.140', user).
+inCompetent('192.168.1.1_victim').
+hasAccount('192.168.1.1_victim', '192.168.1.1', user).
 attackerLocated(internet).
-attackGoal(execCode('192.168.220.140', _)).
+attackGoal(execCode('192.168.1.1', _)).
+inCompetent('192.168.1.2_victim').
+hasAccount('192.168.1.2_victim', '192.168.1.2', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.2', _)).
+inCompetent('192.168.1.3_victim').
+hasAccount('192.168.1.3_victim', '192.168.1.3', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.3', _)).
+inCompetent('192.168.1.4_victim').
+hasAccount('192.168.1.4_victim', '192.168.1.4', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.4', _)).
+inCompetent('192.168.1.5_victim').
+hasAccount('192.168.1.5_victim', '192.168.1.5', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.5', _)).
+inCompetent('192.168.1.7_victim').
+hasAccount('192.168.1.7_victim', '192.168.1.7', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.7', _)).
+inCompetent('192.168.1.6_victim').
+hasAccount('192.168.1.6_victim', '192.168.1.6', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.1.6', _)).

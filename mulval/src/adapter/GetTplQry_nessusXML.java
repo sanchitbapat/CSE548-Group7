@@ -161,7 +161,7 @@ String path = f.getPath();
 		    prot =  al.get(i+3);
 			
 		    
-		String query = "select * from nvd where cve_id=\""+cve+"\"";
+		String query = "select * from nvd where id=\""+cve+"\"";
 		//System.out.println(query);
 		ResultSet result = sql.executeQuery(query);
 //		System.out.println("can we reach here?");
@@ -169,16 +169,16 @@ String path = f.getPath();
 		if (result.next()){
 			
 		//	System.out.println("can we reach here?");
-		cveid = result.getString("cve_id");
-		lose_types = result.getString("availability_impact");
-		range = result.getString("access_complexity");
-		software = result.getString("vulnerable_software_list");
+		cveid = result.getString("id");
+		lose_types = result.getString("lose_types");
+		range = result.getString("rng");
+		software = result.getString("soft");
 	
 		//avoid empty entry for application 
 		if(software.isEmpty())
 			continue;
-		severity = result.getString("score");
-		access=result.getString("access_vector");
+		severity = result.getString("severity");
+		access=result.getString("access");
 	//	System.out.println(range);
 		if(range.contains("remoteExploit")&&(!range.contains("user_action_req"))){
 			
@@ -198,6 +198,7 @@ String path = f.getPath();
 		writeAccount(hosts);
 		}
 		catch (SQLException ex) {
+//			System.err.println("\n\n\n\n\n\n\n\n\n ikde\n\n\n\n\n\n\n\n");
 			System.err.println("SQLException:" + ex.getMessage());
 		} catch (ClassNotFoundException e) {
 

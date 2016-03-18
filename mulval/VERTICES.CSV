@@ -1,0 +1,152 @@
+1,"execCode('192.168.1.1',someUser)","OR",0.7999
+2,"RULE 2 (remote exploit of a server program)","AND",0.7999
+3,"netAccess('192.168.1.1',tcp,'0')","OR",0.9999
+4,"RULE 5 (multi-hop access)","AND",0.8
+5,"hacl('192.168.1.2','192.168.1.1',tcp,'0')","LEAF",1.0
+6,"execCode('192.168.1.2',someUser)","OR",0.7997
+7,"RULE 2 (remote exploit of a server program)","AND",0.7997
+8,"netAccess('192.168.1.2',tcp,'0')","OR",0.9997
+9,"RULE 5 (multi-hop access)","AND",0.8
+10,"hacl('192.168.1.1','192.168.1.2',tcp,'0')","LEAF",1.0
+11,"RULE 5 (multi-hop access)","AND",0.8
+12,"hacl('192.168.1.3','192.168.1.2',tcp,'0')","LEAF",1.0
+13,"execCode('192.168.1.3',someUser)","OR",0.7999
+14,"RULE 2 (remote exploit of a server program)","AND",0.7999
+15,"netAccess('192.168.1.3',tcp,'22')","OR",0.9999
+16,"RULE 5 (multi-hop access)","AND",0.8
+17,"hacl('192.168.1.1','192.168.1.3',tcp,'22')","LEAF",1.0
+18,"RULE 5 (multi-hop access)","AND",0.8
+19,"hacl('192.168.1.2','192.168.1.3',tcp,'22')","LEAF",1.0
+20,"RULE 5 (multi-hop access)","AND",0.8
+21,"hacl('192.168.1.5','192.168.1.3',tcp,'22')","LEAF",1.0
+22,"execCode('192.168.1.5',someUser)","OR",0.7997
+23,"RULE 2 (remote exploit of a server program)","AND",0.7997
+24,"netAccess('192.168.1.5',tcp,'8834')","OR",0.9997
+25,"RULE 5 (multi-hop access)","AND",0.8
+26,"hacl('192.168.1.1','192.168.1.5',tcp,'8834')","LEAF",1.0
+27,"RULE 5 (multi-hop access)","AND",0.8
+28,"hacl('192.168.1.2','192.168.1.5',tcp,'8834')","LEAF",1.0
+29,"RULE 5 (multi-hop access)","AND",0.8
+30,"hacl('192.168.1.3','192.168.1.5',tcp,'8834')","LEAF",1.0
+31,"RULE 5 (multi-hop access)","AND",0.8
+32,"hacl('192.168.1.6','192.168.1.5',tcp,'8834')","LEAF",1.0
+33,"execCode('192.168.1.6',someUser)","OR",1.0
+34,"RULE 2 (remote exploit of a server program)","AND",0.7999
+35,"netAccess('192.168.1.6',tcp,'22')","OR",0.9999
+36,"RULE 5 (multi-hop access)","AND",0.8
+37,"hacl('192.168.1.1','192.168.1.6',tcp,'22')","LEAF",1.0
+38,"RULE 5 (multi-hop access)","AND",0.8
+39,"hacl('192.168.1.2','192.168.1.6',tcp,'22')","LEAF",1.0
+40,"RULE 5 (multi-hop access)","AND",0.8
+41,"hacl('192.168.1.3','192.168.1.6',tcp,'22')","LEAF",1.0
+42,"RULE 5 (multi-hop access)","AND",0.8
+43,"hacl('192.168.1.5','192.168.1.6',tcp,'22')","LEAF",1.0
+44,"RULE 5 (multi-hop access)","AND",0.8
+45,"hacl('192.168.1.7','192.168.1.6',tcp,'22')","LEAF",1.0
+46,"execCode('192.168.1.7',someUser)","OR",0.7999
+47,"RULE 2 (remote exploit of a server program)","AND",0.7999
+48,"netAccess('192.168.1.7',udp,'5355')","OR",0.9999
+49,"RULE 5 (multi-hop access)","AND",0.8
+50,"hacl('192.168.1.1','192.168.1.7',udp,'5355')","LEAF",1.0
+51,"RULE 5 (multi-hop access)","AND",0.8
+52,"hacl('192.168.1.2','192.168.1.7',udp,'5355')","LEAF",1.0
+53,"RULE 5 (multi-hop access)","AND",0.8
+54,"hacl('192.168.1.3','192.168.1.7',udp,'5355')","LEAF",1.0
+55,"RULE 5 (multi-hop access)","AND",0.8
+56,"hacl('192.168.1.5','192.168.1.7',udp,'5355')","LEAF",1.0
+57,"RULE 5 (multi-hop access)","AND",0.8
+58,"hacl('192.168.1.6','192.168.1.7',udp,'5355')","LEAF",1.0
+59,"RULE 6 (direct network access)","AND",0.8
+60,"hacl(internet,'192.168.1.7',udp,'5355')","LEAF",1.0
+61,"attackerLocated(internet)","LEAF",1.0
+62,"networkServiceInfo('192.168.1.7',windows_2003_server,udp,'5355',someUser)","LEAF",1.0
+63,"vulExists('192.168.1.7','CVE-2011-0657',windows_2003_server,remoteExploit,privEscalation)","LEAF",1.0
+64,"RULE 6 (direct network access)","AND",0.8
+65,"hacl(internet,'192.168.1.6',tcp,'22')","LEAF",1.0
+66,"networkServiceInfo('192.168.1.6',openssh,tcp,'22',someUser)","LEAF",1.0
+67,"vulExists('192.168.1.6','CVE-2008-5161',openssh,remoteExploit,privEscalation)","LEAF",1.0
+68,"RULE 2 (remote exploit of a server program)","AND",0.8
+69,"networkServiceInfo('192.168.1.6',openssl,tcp,'22',someUser)","LEAF",1.0
+70,"vulExists('192.168.1.6','CVE-2008-0166',openssl,remoteExploit,privEscalation)","LEAF",1.0
+71,"RULE 2 (remote exploit of a server program)","AND",0.7999
+72,"netAccess('192.168.1.6',tcp,'80')","OR",0.9999
+73,"RULE 5 (multi-hop access)","AND",0.8
+74,"hacl('192.168.1.1','192.168.1.6',tcp,'80')","LEAF",1.0
+75,"RULE 5 (multi-hop access)","AND",0.8
+76,"hacl('192.168.1.2','192.168.1.6',tcp,'80')","LEAF",1.0
+77,"RULE 5 (multi-hop access)","AND",0.8
+78,"hacl('192.168.1.3','192.168.1.6',tcp,'80')","LEAF",1.0
+79,"RULE 5 (multi-hop access)","AND",0.8
+80,"hacl('192.168.1.5','192.168.1.6',tcp,'80')","LEAF",1.0
+81,"RULE 5 (multi-hop access)","AND",0.8
+82,"hacl('192.168.1.7','192.168.1.6',tcp,'80')","LEAF",1.0
+83,"RULE 6 (direct network access)","AND",0.8
+84,"hacl(internet,'192.168.1.6',tcp,'80')","LEAF",1.0
+85,"networkServiceInfo('192.168.1.6',http_server,tcp,'80',someUser)","LEAF",1.0
+86,"vulExists('192.168.1.6','CVE-1999-0678',http_server,remoteExploit,privEscalation)","LEAF",1.0
+87,"RULE 2 (remote exploit of a server program)","AND",0.8
+88,"vulExists('192.168.1.6','CVE-2012-0053',http_server,remoteExploit,privEscalation)","LEAF",1.0
+89,"RULE 2 (remote exploit of a server program)","AND",0.8
+90,"networkServiceInfo('192.168.1.6',internet_information_services,tcp,'80',someUser)","LEAF",1.0
+91,"vulExists('192.168.1.6','CVE-2003-1567',internet_information_services,remoteExploit,privEscalation)","LEAF",1.0
+92,"RULE 2 (remote exploit of a server program)","AND",0.8
+93,"networkServiceInfo('192.168.1.6',java_system_application_server,tcp,'80',someUser)","LEAF",1.0
+94,"vulExists('192.168.1.6','CVE-2010-0386',java_system_application_server,remoteExploit,privEscalation)","LEAF",1.0
+95,"RULE 2 (remote exploit of a server program)","AND",0.8
+96,"networkServiceInfo('192.168.1.6',weblogic_server,tcp,'80',someUser)","LEAF",1.0
+97,"vulExists('192.168.1.6','CVE-2004-2320',weblogic_server,remoteExploit,privEscalation)","LEAF",1.0
+98,"RULE 2 (remote exploit of a server program)","AND",0.7999
+99,"netAccess('192.168.1.6',udp,'2049')","OR",0.9999
+100,"RULE 5 (multi-hop access)","AND",0.8
+101,"hacl('192.168.1.1','192.168.1.6',udp,'2049')","LEAF",1.0
+102,"RULE 5 (multi-hop access)","AND",0.8
+103,"hacl('192.168.1.2','192.168.1.6',udp,'2049')","LEAF",1.0
+104,"RULE 5 (multi-hop access)","AND",0.8
+105,"hacl('192.168.1.3','192.168.1.6',udp,'2049')","LEAF",1.0
+106,"RULE 5 (multi-hop access)","AND",0.8
+107,"hacl('192.168.1.5','192.168.1.6',udp,'2049')","LEAF",1.0
+108,"RULE 5 (multi-hop access)","AND",0.8
+109,"hacl('192.168.1.7','192.168.1.6',udp,'2049')","LEAF",1.0
+110,"RULE 6 (direct network access)","AND",0.8
+111,"hacl(internet,'192.168.1.6',udp,'2049')","LEAF",1.0
+112,"networkServiceInfo('192.168.1.6',solaris,udp,'2049',someUser)","LEAF",1.0
+113,"vulExists('192.168.1.6','CVE-1999-0211',solaris,remoteExploit,privEscalation)","LEAF",1.0
+114,"RULE 2 (remote exploit of a server program)","AND",0.7999
+115,"networkServiceInfo('192.168.1.6',ultrix,udp,'2049',someUser)","LEAF",1.0
+116,"vulExists('192.168.1.6','CVE-1999-0170',ultrix,remoteExploit,privEscalation)","LEAF",1.0
+117,"RULE 5 (multi-hop access)","AND",0.8
+118,"hacl('192.168.1.7','192.168.1.5',tcp,'8834')","LEAF",1.0
+119,"RULE 6 (direct network access)","AND",0.8
+120,"hacl(internet,'192.168.1.5',tcp,'8834')","LEAF",1.0
+121,"networkServiceInfo('192.168.1.5',md5,tcp,'8834',someUser)","LEAF",1.0
+122,"vulExists('192.168.1.5','CVE-2004-2761',md5,remoteExploit,privEscalation)","LEAF",1.0
+123,"RULE 5 (multi-hop access)","AND",0.8
+124,"hacl('192.168.1.6','192.168.1.3',tcp,'22')","LEAF",1.0
+125,"RULE 5 (multi-hop access)","AND",0.8
+126,"hacl('192.168.1.7','192.168.1.3',tcp,'22')","LEAF",1.0
+127,"RULE 6 (direct network access)","AND",0.8
+128,"hacl(internet,'192.168.1.3',tcp,'22')","LEAF",1.0
+129,"networkServiceInfo('192.168.1.3',openssh,tcp,'22',someUser)","LEAF",1.0
+130,"vulExists('192.168.1.3','CVE-2008-5161',openssh,remoteExploit,privEscalation)","LEAF",1.0
+131,"RULE 5 (multi-hop access)","AND",0.8
+132,"hacl('192.168.1.5','192.168.1.2',tcp,'0')","LEAF",1.0
+133,"RULE 5 (multi-hop access)","AND",0.8
+134,"hacl('192.168.1.6','192.168.1.2',tcp,'0')","LEAF",1.0
+135,"RULE 5 (multi-hop access)","AND",0.8
+136,"hacl('192.168.1.7','192.168.1.2',tcp,'0')","LEAF",1.0
+137,"RULE 6 (direct network access)","AND",0.8
+138,"hacl(internet,'192.168.1.2',tcp,'0')","LEAF",1.0
+139,"networkServiceInfo('192.168.1.2',windows_2000,tcp,'0',someUser)","LEAF",1.0
+140,"vulExists('192.168.1.2','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)","LEAF",1.0
+141,"RULE 5 (multi-hop access)","AND",0.8
+142,"hacl('192.168.1.3','192.168.1.1',tcp,'0')","LEAF",1.0
+143,"RULE 5 (multi-hop access)","AND",0.8
+144,"hacl('192.168.1.5','192.168.1.1',tcp,'0')","LEAF",1.0
+145,"RULE 5 (multi-hop access)","AND",0.8
+146,"hacl('192.168.1.6','192.168.1.1',tcp,'0')","LEAF",1.0
+147,"RULE 5 (multi-hop access)","AND",0.8
+148,"hacl('192.168.1.7','192.168.1.1',tcp,'0')","LEAF",1.0
+149,"RULE 6 (direct network access)","AND",0.8
+150,"hacl(internet,'192.168.1.1',tcp,'0')","LEAF",1.0
+151,"networkServiceInfo('192.168.1.1',windows_2000,tcp,'0',someUser)","LEAF",1.0
+152,"vulExists('192.168.1.1','CVE-1999-0511',windows_2000,remoteExploit,privEscalation)","LEAF",1.0
