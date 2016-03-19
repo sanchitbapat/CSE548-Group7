@@ -1,0 +1,18 @@
+#! /usr/bin/env python
+import networkx as nx
+import xmltodict
+import os
+import json
+
+with open('/home/sanchit/mulval/AttackGraph.xml') as fd:
+
+	doc=xmltodict.parse(fd.read())
+	map={}
+	f = open('JSON_Graph.json', 'w')
+	for i in range(0,152):
+		key =(str(doc['attack_graph']['vertices']['vertex'][i]['id']))
+		value = (str(doc['attack_graph']['vertices']['vertex'][i]['fact']) + ", "+str(doc['attack_graph']['vertices']['vertex'][i]['metric'])+", "+str(doc['attack_graph']['vertices']['vertex'][i]['type']))
+		#print str(key)+": "+str(value)
+		map[key]=value
+		print str(map)
+	json.dump(map, f, indent=4)
